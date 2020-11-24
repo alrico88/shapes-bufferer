@@ -1,7 +1,7 @@
 {
   "name": "shapes-bufferer",
-  "version": "0.1.0",
-  "description": "Helper function to add a buffer to a GeoJSON or BBox",
+  "version": "0.2.0",
+  "description": "Helper classes to add a buffer to a GeoJSON or BBox",
   "main": "index.js",
   "repository": {
     "url": "https://github.com/alrico88/shapes-bufferer"
