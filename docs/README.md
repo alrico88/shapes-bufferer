@@ -1,3 +1,5 @@
+shapes-bufferer / [Exports](modules.md)
+
 # shapes-bufferer
 
 Apply a distance buffer to a GeoJSON, BBox, or geohash
