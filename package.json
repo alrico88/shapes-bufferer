@@ -1,6 +1,6 @@
 {
   "name": "shapes-bufferer",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "Helper classes to add a buffer to a GeoJSON or BBox",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
