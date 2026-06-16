@@ -5,11 +5,13 @@
     "strict": true,
     "lib": ["ES2020", "DOM"],
     "esModuleInterop": true,
-    "moduleResolution": "node",
     "skipLibCheck": true,
     "noUnusedLocals": true,
     "noImplicitAny": true,
     "allowJs": true,
-    "resolveJsonModule": true
-  }
+    "resolveJsonModule": true,
+    "isolatedModules": true
+  },
+  "include": ["src", "test", "vite.config.ts"],
+  "exclude": ["node_modules", "dist", "coverage", "docs"]
 }

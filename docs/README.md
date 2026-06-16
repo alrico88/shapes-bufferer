@@ -1,4 +1,6 @@
-shapes-bufferer / [Exports](modules.md)
+**shapes-bufferer**
+
+---
 
 # shapes-bufferer
 
@@ -15,12 +17,12 @@ Using yarn `yarn add shapes-bufferer`
 In CommonJS env
 
 ```javascript
-const { bufferFeature } = require('shapes-bufferer');
+const { bufferFeature } = require("shapes-bufferer");
 
 const geojson = {
-  type: 'Feature',
+  type: "Feature",
   geometry: {
-    type: 'Polygon',
+    type: "Polygon",
     coordinates: [
       [
         [-3.687352, 40.440563],
@@ -40,7 +42,7 @@ const buffered = bufferFeature(geojson, 1);
 Using imports
 
 ```javascript
-import { bufferBBox } from 'shapes-bufferer';
+import { bufferBBox } from "shapes-bufferer";
 
 bufferBBox([-3.707651, 40.423234, -3.679004, 40.437593], 1);
 ```

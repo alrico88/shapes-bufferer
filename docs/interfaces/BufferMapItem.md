@@ -1,30 +1,25 @@
-[shapes-bufferer](../README.md) / [Exports](../modules.md) / BufferMapItem
+[**shapes-bufferer**](../README.md)
+
+---
+
+[shapes-bufferer](../globals.md) / BufferMapItem
 
 # Interface: BufferMapItem
 
-## Table of contents
-
-### Properties
-
-- [bufferInKm](BufferMapItem.md#bufferinkm)
-- [precision](BufferMapItem.md#precision)
+Defined in: [index.ts:7](https://github.com/alrico88/shapes-bufferer/blob/master/src/index.ts#L7)
 
 ## Properties
 
 ### bufferInKm
 
-• **bufferInKm**: `number`
+> **bufferInKm**: `number`
 
-#### Defined in
+Defined in: [index.ts:9](https://github.com/alrico88/shapes-bufferer/blob/master/src/index.ts#L9)
 
-index.ts:17
-
-___
+---
 
 ### precision
 
-• **precision**: `number`
+> **precision**: `number`
 
-#### Defined in
-
-index.ts:16
+Defined in: [index.ts:8](https://github.com/alrico88/shapes-bufferer/blob/master/src/index.ts#L8)

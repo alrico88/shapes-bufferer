@@ -2,49 +2,40 @@
   "name": "shapes-bufferer",
   "version": "2.0.1",
   "description": "Helper classes to add a buffer to a GeoJSON or BBox",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
-  "exports": {
-    "require": "./dist/index.js",
-    "import": "./dist/index.mjs"
+  "keywords": [
+    "bbox",
+    "buffer",
+    "geohash",
+    "geojson",
+    "shape"
+  ],
+  "license": "MIT",
+  "author": "Alberto Rico",
+  "repository": {
+    "url": "https://github.com/alrico88/shapes-bufferer"
   },
-  "types": "./dist/index.d.ts",
   "files": [
     "dist",
     "src"
   ],
-  "author": "Alberto Rico",
-  "license": "MIT",
-  "repository": {
-    "url": "https://github.com/alrico88/shapes-bufferer"
-  },
-  "keywords": [
-    "shape",
-    "geojson",
-    "buffer",
-    "geohash",
-    "bbox"
-  ],
   "sideEffects": false,
-  "devDependencies": {
-    "@turf/boolean-contains": "^6.5.0",
-    "@turf/helpers": "^6.5.0",
-    "@types/geojson": "^7946.0.8",
-    "@typescript-eslint/eslint-plugin": "^4.33.0",
-    "@typescript-eslint/parser": "^4.33.0",
-    "c8": "^7.11.3",
-    "coveralls": "^3.1.1",
-    "eslint": "^7.32.0",
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-config-airbnb-typescript": "^14.0.2",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-import": "^2.26.0",
-    "tslib": "^2.4.0",
-    "tsup": "^6.0.1",
-    "typedoc": "^0.22.15",
-    "typedoc-plugin-markdown": "^3.12.1",
-    "typescript": "^4.6.4",
-    "vitest": "^0.13.1"
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "require": "./dist/index.js",
+    "import": "./dist/index.mjs"
+  },
+  "scripts": {
+    "dev": "vp pack --watch",
+    "build": "vp pack",
+    "test": "vp test",
+    "coverage": "vp test --coverage",
+    "lint": "vp lint",
+    "docs": "typedoc",
+    "prepublish": "vp pack",
+    "coveralls": "vp test --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "prepare": "vp config"
   },
   "dependencies": {
     "@turf/buffer": "^6.5.0",
@@ -52,14 +43,16 @@
     "@turf/union": "6.5.0",
     "bbox-helper-functions": "^3.2.4"
   },
-  "scripts": {
-    "dev": "pnpm run build -- --watch src",
-    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
-    "test": "vitest run",
-    "coverage": "vitest run --coverage",
-    "lint": "eslint --cache --fix --ignore-path .gitignore --ext .ts,.js src",
-    "docs": "typedoc src/index.ts --readme README.md --gitRevision master",
-    "prepublish": "pnpm run build",
-    "coveralls": "vitest run --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
-  }
+  "devDependencies": {
+    "@turf/boolean-contains": "^6.5.0",
+    "@turf/helpers": "^6.5.0",
+    "@types/geojson": "^7946.0.8",
+    "coveralls": "^3.1.1",
+    "typedoc": "^0.28.19",
+    "typedoc-plugin-markdown": "^4.12.0",
+    "typescript": "^6.0.3",
+    "vite-plus": "catalog:",
+    "vitest": "catalog:"
+  },
+  "packageManager": "pnpm@11.7.0"
 }
