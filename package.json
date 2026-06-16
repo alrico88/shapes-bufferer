@@ -18,7 +18,13 @@
   "repository": {
     "url": "https://github.com/alrico88/shapes-bufferer"
   },
-  "keywords": ["shape", "geojson", "buffer", "geohash", "bbox"],
+  "keywords": [
+    "shape",
+    "geojson",
+    "buffer",
+    "geohash",
+    "bbox"
+  ],
   "sideEffects": false,
   "devDependencies": {
     "@turf/boolean-contains": "^6.5.0",
@@ -42,6 +48,8 @@
   },
   "dependencies": {
     "@turf/buffer": "^6.5.0",
+    "@turf/difference": "6.5.0",
+    "@turf/union": "6.5.0",
     "bbox-helper-functions": "^3.2.4"
   },
   "scripts": {

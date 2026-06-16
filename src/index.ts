@@ -12,6 +12,8 @@ import {
   getGeoJSONBBox,
 } from 'bbox-helper-functions';
 
+export * from './geojson-bufferer';
+
 export interface BufferMapItem {
   precision: number;
   bufferInKm: number;
