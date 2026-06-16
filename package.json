@@ -1,6 +1,6 @@
 {
   "name": "shapes-bufferer",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Helper classes to add a buffer to a GeoJSON or BBox",
   "keywords": [
     "bbox",
