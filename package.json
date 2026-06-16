@@ -42,7 +42,7 @@
     "coverage": "vp test --coverage",
     "lint": "vp lint",
     "docs": "typedoc",
-    "prepublish": "vp pack",
+    "prepublishOnly": "vp pack",
     "coveralls": "vp test --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "prepare": "vp config"
   },
