@@ -47,7 +47,7 @@
     "prepare": "vp config"
   },
   "dependencies": {
-    "@turf/buffer": "^6.5.0",
+    "@turf/buffer": "^7.4.0",
     "@turf/difference": "6.5.0",
     "@turf/union": "6.5.0",
     "bbox-helper-functions": "^3.2.4"
